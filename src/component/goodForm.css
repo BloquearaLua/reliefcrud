@@ -1,0 +1,4 @@
+.addForm>*{
+    display: inline-flex;
+    width: 50%;
+}

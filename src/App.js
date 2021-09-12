@@ -1,24 +1,27 @@
-import logo from './logo.svg';
+import { Layout } from 'antd';
+import { useState } from 'react';
+import '../node_modules/antd/dist/antd.css';
 import './App.css';
+import SideMenu from './component/SideMenu';
+import MainContent from './component/MainContent';
 
 function App() {
+  // const [key, setKey] = useState([]);
+  const [clickList, setclickList] = useState([]);
+  const [isUpdate, setisUpdate] = useState(false);
+  const handleclick = (_clickList) => {
+    setclickList(_clickList);
+  }
+  const handleisUpdate = (flag) => {
+    setisUpdate(flag);
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout style={{minHeight:"100%"}} >
+      <SideMenu handleclick={handleclick} isUpdate={isUpdate}/>
+        <Layout>
+        <MainContent clickList={clickList} handleisUpdate={handleisUpdate}/>
+        </Layout>
+    </Layout>
   );
 }
 
