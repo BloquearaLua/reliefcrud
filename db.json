@@ -1,0 +1,397 @@
+{
+  "types": [
+    {
+      "id": 1,
+      "name": "救灾物资",
+      "key": "/relief"
+    },
+    {
+      "id": 2,
+      "name": "森林防火设备",
+      "key": "/fire"
+    }
+  ],
+  "category": [
+    {
+      "id": 1,
+      "name": "居住类",
+      "typeId": 1,
+      "key": "/relief/live"
+    },
+    {
+      "id": 2,
+      "name": "床上用品类",
+      "typeId": 1,
+      "key": "/relief/bedgoods"
+    },
+    {
+      "id": 3,
+      "name": "救灾设备类",
+      "typeId": 1,
+      "key": "/relief/fire"
+    },
+    {
+      "id": 4,
+      "name": "基本生活类",
+      "typeId": 1,
+      "key": "/relief/baselive"
+    },
+    {
+      "id": 5,
+      "name": "衣着类",
+      "typeId": 1,
+      "key": "/relief/clothes"
+    },
+    {
+      "id": 6,
+      "name": "其它",
+      "typeId": 1,
+      "key": "/relief/other"
+    },
+    {
+      "id": 7,
+      "name": "防火工具",
+      "typeId": 2,
+      "key": "/fire/avoid"
+    },
+    {
+      "id": 8,
+      "name": "扑灭明火、余火",
+      "typeId": 2,
+      "key": "/fire/outfire"
+    },
+    {
+      "name": "吃的",
+      "typeId": 1,
+      "key": "/relief/86691384-de47-49e1-b4ba-b52a0291315a",
+      "id": 9
+    },
+    {
+      "name": "医护",
+      "typeId": 1,
+      "key": "/relief/db4c1535-d23a-47e1-ab83-b2e0d2b2ebbb",
+      "id": 10
+    },
+    {
+      "name": "洗护",
+      "typeId": 1,
+      "key": "/relief/2bfdacfc-5d77-49a8-ae23-5e8501feb4fc",
+      "id": 11
+    },
+    {
+      "name": "医药",
+      "typeId": 1,
+      "key": "/relief/medicine",
+      "id": 12
+    },
+    {
+      "name": "",
+      "typeId": 1,
+      "key": "/relief/51957667-64e8-495b-838e-80844038e534",
+      "id": 14
+    }
+  ],
+  "ifvalid": [
+    {
+      "id": 1,
+      "value": 1,
+      "valid": "全部"
+    },
+    {
+      "id": 2,
+      "value": 2,
+      "valid": "是"
+    },
+    {
+      "id": 3,
+      "value": 3,
+      "valid": "否"
+    }
+  ],
+  "keepType": [
+    {
+      "id": 1,
+      "type": "自储备",
+      "value": "1"
+    },
+    {
+      "id": 2,
+      "type": "企业储备",
+      "value": "2"
+    }
+  ],
+  "children": [
+    {
+      "name": "救援帐篷",
+      "category": "居住类",
+      "unit": "顶",
+      "specs": "8m³",
+      "validId": "2",
+      "keptTypeId": "1",
+      "weight": "22",
+      "cube": "",
+      "introduction": "",
+      "date": "2021/9/12",
+      "grade": 3,
+      "key": "/relief/live/326b0f7c-07f6-4442-9002-b43ad4a5247e",
+      "categoryId": 1,
+      "id": 2
+    },
+    {
+      "name": "枕头",
+      "category": "床上用品类",
+      "unit": "个",
+      "specs": "中",
+      "validId": "2",
+      "keptTypeId": "1",
+      "weight": "",
+      "cube": "80",
+      "introduction": "",
+      "date": "2021/9/12",
+      "grade": 3,
+      "key": "/relief/live/99ec0677-b94c-4448-b906-6219c4f20c67",
+      "categoryId": 2,
+      "id": 3
+    },
+    {
+      "name": "灭火器",
+      "category": "救灾设备类",
+      "unit": "个",
+      "specs": "干冰",
+      "validId": "2",
+      "keptTypeId": "2",
+      "weight": "5kg",
+      "cube": "40dm³",
+      "introduction": "灭火",
+      "date": "2021/9/12",
+      "grade": 3,
+      "key": "/relief/live/5790b8f3-0b86-4e71-903a-e620bf753e60",
+      "categoryId": 3,
+      "id": 4
+    },
+    {
+      "name": "水杯",
+      "category": "基本生活类",
+      "unit": "个",
+      "specs": "ng",
+      "validId": "3",
+      "keptTypeId": "1",
+      "weight": "100g",
+      "cube": "80",
+      "introduction": "",
+      "date": "2021/9/12",
+      "grade": 3,
+      "key": "/relief/live/2f875119-ccff-4571-9b95-8205ec2c54dc",
+      "categoryId": 4,
+      "id": 5
+    },
+    {
+      "name": "万花油",
+      "category": "医药",
+      "categoryId": 12,
+      "unit": "瓶",
+      "specs": "50g",
+      "validId": "2",
+      "keptTypeId": "1",
+      "weight": "50g",
+      "cube": "",
+      "introduction": "",
+      "date": "2021/9/12",
+      "grade": 3,
+      "key": "/relief/medicine/2bdbcede-17af-4ba5-9d4f-475c93ef1a03",
+      "id": 7
+    },
+    {
+      "name": "风油精",
+      "category": "医药",
+      "unit": "瓶",
+      "specs": "10g",
+      "validId": "2",
+      "keptTypeId": "1",
+      "weight": "10g",
+      "cube": "",
+      "introduction": "",
+      "key": "relief/medicine/oil",
+      "date": "2021/9/12",
+      "grade": 3,
+      "categoryId": 12,
+      "id": 8
+    },
+    {
+      "name": "救援衣服",
+      "category": "衣着类",
+      "unit": "套",
+      "specs": "L码",
+      "validId": "2",
+      "keptTypeId": "1",
+      "weight": "",
+      "cube": "",
+      "introduction": "",
+      "key": "relief/live/clothes",
+      "date": "2021/9/12",
+      "grade": 3,
+      "categoryId": 5,
+      "id": 9
+    },
+    {
+      "name": "锤子",
+      "category": "其它",
+      "unit": "支",
+      "specs": "L",
+      "validId": "2",
+      "keptTypeId": "1",
+      "weight": "500g",
+      "cube": "",
+      "introduction": "",
+      "key": "/relief/other/28318d49-0b66-4c7f-ac31-feeaac3c8366",
+      "date": "2021/9/12",
+      "grade": 3,
+      "categoryId": 6,
+      "id": 10
+    },
+    {
+      "id": 11,
+      "name": "油积打太即",
+      "categoryId": 8,
+      "grade": 3,
+      "key": "/fire/avoid/aa",
+      "validId": "2",
+      "weight": "",
+      "cube": "",
+      "introduction": "",
+      "keptTypeId": "1",
+      "specs": "132m",
+      "category": "扑灭明火、余火",
+      "unit": "",
+      "date": "2021/9/12"
+    },
+    {
+      "id": 12,
+      "name": "它式说具器",
+      "categoryId": 8,
+      "grade": 3,
+      "key": "/fire/outfire/bb",
+      "weight": "",
+      "cube": "",
+      "introduction": "",
+      "validId": "2",
+      "keptTypeId": "1",
+      "specs": "123dm",
+      "category": "扑灭明火、余火",
+      "unit": "",
+      "date": "2021/9/12"
+    },
+    {
+      "id": 13,
+      "name": "世后",
+      "categoryId": 8,
+      "grade": 3,
+      "key": "/fire/outfire/dd",
+      "weight": "",
+      "cube": "5666",
+      "introduction": "",
+      "validId": "2",
+      "keptTypeId": "1",
+      "specs": "1m*1.2m",
+      "category": "扑灭明火、余火",
+      "unit": "",
+      "date": "2021/9/12"
+    },
+    {
+      "name": "水桶",
+      "categoryId": 6,
+      "category": "其它",
+      "unit": "",
+      "specs": "2m*2m*2m",
+      "validId": "2",
+      "keptTypeId": "1",
+      "weight": "",
+      "cube": "",
+      "introduction": "",
+      "key": "/relief/other/aa",
+      "date": "2021/9/12",
+      "grade": 3,
+      "id": 14
+    },
+    {
+      "name": "回复回复",
+      "category": "",
+      "unit": "",
+      "specs": "20kg",
+      "validId": "2",
+      "keptTypeId": "2",
+      "weight": "",
+      "cube": "",
+      "introduction": "",
+      "date": "2021/9/12",
+      "grade": 3,
+      "categoryId": 14,
+      "key": "/relief/51957667-64e8-495b-838e-80844038e534/0e19c8b6-fb36-4e00-9177-3ebab95dc408",
+      "id": 15
+    },
+    {
+      "name": "救援帐篷4",
+      "category": "",
+      "unit": "",
+      "specs": "3m*2m*2m",
+      "validId": "2",
+      "keptTypeId": "2",
+      "weight": "",
+      "cube": "",
+      "introduction": "",
+      "date": "2021/9/12",
+      "grade": 3,
+      "categoryId": 14,
+      "key": "/relief/c32eb32d-a36d-4ce1-88d6-bd76b8c1b587/50dc2a03-651c-4169-8152-f0e99021a994",
+      "id": 16
+    },
+    {
+      "name": "衣服1",
+      "category": "",
+      "unit": "",
+      "specs": "M码",
+      "validId": "2",
+      "keptTypeId": "2",
+      "weight": "",
+      "cube": "",
+      "introduction": "",
+      "date": "2021/9/12",
+      "grade": 3,
+      "categoryId": 14,
+      "key": "/relief/077f56e1-0e7c-42e3-bab4-58187e24fb65/610d78ba-9bf5-4eff-8d84-ddf2d1fb8377",
+      "id": 17
+    },
+    {
+      "name": "衣服2",
+      "category": "衣着类",
+      "unit": "件",
+      "specs": "S码",
+      "validId": "2",
+      "keptTypeId": "2",
+      "weight": "50kg",
+      "cube": "",
+      "introduction": "",
+      "date": "2021/9/12",
+      "grade": 3,
+      "categoryId": 5,
+      "key": "/relief//relief/clothes/1966a961-fda3-44b6-a427-b218b80a8c74",
+      "id": 18
+    },
+    {
+      "name": "裤子2",
+      "category": "衣着类",
+      "unit": "条",
+      "specs": "L码",
+      "validId": "2",
+      "keptTypeId": "1",
+      "weight": "",
+      "cube": "",
+      "introduction": "",
+      "date": "2021/9/12",
+      "grade": 3,
+      "categoryId": 5,
+      "key": "/relief//relief/clothes/f19fb99c-1c47-4308-acae-80f1b2ca4e33",
+      "id": 19
+    }
+  ]
+}
